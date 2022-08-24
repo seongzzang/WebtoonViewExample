@@ -13,4 +13,17 @@ class bannerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    func setscreenWidth(){
+        let screenSize = UIScreen.main.bounds
+        let width = screenSize.width
+        let height = width * 120 / 218
+    }
+    
+    func setImage(){
+        let image = UIImage(named: "")
+        let imageView = UIImageView(image: image)
+        
+        imageView.frame = CGRect(x: 0, y: 0, width: , height: <#T##CGFloat#>)
+    }
 }

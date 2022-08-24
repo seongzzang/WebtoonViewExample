@@ -18,6 +18,8 @@ class bannerViewController: UIViewController {
         let screenSize = UIScreen.main.bounds
         let width = screenSize.width
         let height = width * 120 / 218
+        
+        setImage(width: width, height: height)
     }
     
     func setImage(width: CGFloat, height: CGFloat){

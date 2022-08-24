@@ -23,12 +23,15 @@ class bannerViewController: UIViewController {
     }
     
     func setImage(width: CGFloat, height: CGFloat){
-        let image = UIImage(named: "")
-        let imageView = UIImageView(image: image)
         
-        imageView.frame = CGRect(x: 0, y: 0, width: width, height: height)
-        self.view.addSubview(imageView)
-        
-        self.view.frame = CGRect(x: 0, y: 0, width: width, height: height)
+        for (index, imageName) in banner_images.enumerated() {
+            let image = UIImage(named: imageName)
+            let imageView = UIImageView(image: image)
+            
+            imageView.frame = CGRect(x: CGFloat(index) * width, y: 0, width: width, height: height)
+            self.view.addSubview(imageView)
+        }
+        self.view.frame = CGRect(x: width * CGFloat(banner_images.count), y: 0, width: width, height: height)
     }
+    
 }

@@ -16,20 +16,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qSa-Nf-CKL">
-                                <rect key="frame" x="0.0" y="44" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="hRM-qH-xKL"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="c9D-Q0-prV"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7RS-mQ-jWP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7RS-mQ-jWP" secondAttribute="height" multiplier="20:16" id="xHC-LE-3Ft"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Yaq-dc-Z0c"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Ozy-mX-dvM"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7RS-mQ-jWP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6CI-hF-4no"/>
+                            <constraint firstItem="7RS-mQ-jWP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E48-6p-YsK"/>
+                            <constraint firstItem="7RS-mQ-jWP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Mbv-dk-vhO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerScrollView" destination="7RS-mQ-jWP" id="XHf-GM-0DU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="68"/>
+            <point key="canvasLocation" x="28.985507246376812" y="67.633928571428569"/>
         </scene>
     </scenes>
     <resources>

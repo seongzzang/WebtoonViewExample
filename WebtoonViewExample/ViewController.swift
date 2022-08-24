@@ -9,9 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var bannerScrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let bannerViewController = bannerViewController()
+        bannerScrollView.addSubview(bannerViewController.view)
     }
 
 

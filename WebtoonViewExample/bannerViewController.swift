@@ -31,7 +31,7 @@ class bannerViewController: UIViewController {
             imageView.frame = CGRect(x: CGFloat(index) * width, y: 0, width: width, height: height)
             self.view.addSubview(imageView)
         }
-        self.view.frame = CGRect(x: width * CGFloat(banner_images.count), y: 0, width: width, height: height)
+        self.view.frame = CGRect(x: 0, y: 0, width: width * CGFloat(banner_images.count), height: height)
     }
     
 }

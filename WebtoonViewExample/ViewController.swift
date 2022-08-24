@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         
         let bannerViewController = bannerViewController()
         bannerScrollView.addSubview(bannerViewController.view)
+        bannerScrollView.contentSize = bannerViewController.view.frame.size
     }
 
 

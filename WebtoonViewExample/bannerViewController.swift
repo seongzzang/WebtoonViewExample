@@ -20,10 +20,13 @@ class bannerViewController: UIViewController {
         let height = width * 120 / 218
     }
     
-    func setImage(){
+    func setImage(width: CGFloat, height: CGFloat){
         let image = UIImage(named: "")
         let imageView = UIImageView(image: image)
         
-        imageView.frame = CGRect(x: 0, y: 0, width: , height: <#T##CGFloat#>)
+        imageView.frame = CGRect(x: 0, y: 0, width: width, height: height)
+        self.view.addSubview(imageView)
+        
+        self.view.frame = CGRect(x: 0, y: 0, width: width, height: height)
     }
 }

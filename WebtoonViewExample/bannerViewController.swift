@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class bannerViewController: UIViewController {
+    let banner_images = [""]
     override func viewDidLoad() {
         super.viewDidLoad()
     }
